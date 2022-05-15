@@ -16,7 +16,7 @@ The steps above will make the icons available, but limited to the Lovelace UI on
 ```yaml
 frontend:
   extra_module_url:
-    - /hacsfiles/hass-janick-icons/hass-janick-icons.js
+    - /local/community/hass-janick-icons/hass-janick-icons.js
 ```
 
 For this step, a system restart is needed.
