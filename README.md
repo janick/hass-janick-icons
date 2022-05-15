@@ -6,7 +6,7 @@ Custom icon pack designed for Home Assistant for personal use
 
 ## Content
 
-![Preview](./svg/rowing-machine.svg) rowing-machine<br />
+<img src="./svg/rowing-machine.svg" height=24> rowing-machine<br />
 
 ## Install
 
