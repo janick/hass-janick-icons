@@ -1,35 +1,27 @@
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
 
-# hass-kongo09-icons
+# hass-janick-icons
 
 Custom icon pack designed for Home Assistant for personal use
 
 ## Content
 
-![Preview](./svg/xmas_star.svg) xmas_star<br />
-![Preview](./svg/xmas_stars.svg) xmas_stars<br />
-![Preview](./svg/circle.svg) circle<br />
-![Preview](./svg/roborock.svg) roborock<br />
-![Preview](./svg/ceiling_light.svg) ceiling_light<br />
-![Preview](./svg/spot_light.svg) spot_light<br />
-![Preview](./svg/wall_light.svg) wall_light<br />
-![Preview](./svg/hanging_light.svg) hanging_light<br />
-![Preview](./svg/pirce_light.svg) pirce_light<br />
+![Preview](./svg/rowing-machine.svg) rowing-machine<br />
 
 ## Install
 
 ### HACS
-Add `https://github.com/kongo09/hass-kongo09-icons` as custom-repository for a Lovelace plugin in [HACS](https://hacs.xyz/docs/faq/custom_repositories/)
+Add `https://github.com/janick/hass-janick-icons` as custom-repository for a Lovelace plugin in [HACS](https://hacs.xyz/docs/faq/custom_repositories/)
 
 ### Manual
-Copy the `hass-kongo09-icons.js` file into `<config>/www/` where `<config>` is your home-assistant config directory (the directory where your `configuration.yaml` resides).
+Copy the `hass-janick-icons.js` file into `<config>/www/` where `<config>` is your home-assistant config directory (the directory where your `configuration.yaml` resides).
 
 Add the folowing to the `frontend` section of your `configuration.yaml`
 
 ```yaml
 frontend:
   extra_module_url:
-    - /local/hass-kongo09-icons.js
+    - /local/hass-janick-icons.js
 ```
 
 Or add the following to your lovelace configuration using the Raw Config editor under Configure UI or ui-lovelace.yaml if using YAML mode.
@@ -37,21 +29,20 @@ Or add the following to your lovelace configuration using the Raw Config editor 
 ```yaml
 resources:
   - type: js
-    url: /local/hass-kongo09-icons.js
+    url: /local/hass-janick-icons.js
 ```
 
 Restart home-assistant.
 
 ## Using
-The icons uses the prefix `kongo09:`.
+The icons uses the prefix `janick:`.
 
 Example:
 
 ```
 type: entity
-entity: fan.air_ac2729
-icon: 'kongo09:power_button'
+icon: 'janick:rowing-machine'
 ```
 
 ## Thanks
-Thanks to @hulkhaugen, as I used his hass-bha-icons based on hass-fontawesome from @thomasloven as a template for this pack
+Thanks to @kongo09, as I used his hass-kongo09-icons as a template for this pack
