@@ -35,7 +35,7 @@ resources:
 Restart home-assistant.
 
 ## Using
-The icons uses the prefix `janick:`.
+The icons use the prefix `janick:`.
 
 Example:
 
@@ -44,5 +44,15 @@ type: entity
 icon: 'janick:rowing-machine'
 ```
 
+## Designing New Icons with InkScape
+
+* Use a 24x24 pixel canvas, with "Checkerboard background" (see 'Document Properties').
+* Set stroke style to "undefined" (select the "?" icon)
+* Set the fill style to "Filled" so the final result will be visible.
+* Merge overlapping paths using "Path->Union".
+* Combine non-overlapping paths using "Path->Combine".
+* Save as "Optimized SVG".
+* Add an entry for the new icon in dist/hass-janick-icons.js, using the content of the <path d="..."/> attribute from the SVG file as the 'path' property.
+
 ## Thanks
-Thanks to @kongo09, as I used his hass-kongo09-icons as a template for this pack
+Thanks to https://github.com/kongo09/hass-kongo09-icons and https://github.com/arallsopp/hass-hue-icons as a template for this pack

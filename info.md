@@ -6,6 +6,7 @@ Install the plugin and use it like in this example:
 ```yaml
 title: My Card
 icon: janick:rowing-machine
+icon: janick:rowing-on-machine
 ```
 
 ![Example](https://github.com/janick/hass-janick-icons/blob/master/content.png)
@@ -16,7 +17,7 @@ The steps above will make the icons available, but limited to the Lovelace UI on
 ```yaml
 frontend:
   extra_module_url:
-    - /local/community/hass-janick-icons/hass-janick-icons.js
+    - /hacsfiles/hass-janick-icons/hass-janick-icons.js
 ```
 
 For this step, a system restart is needed.
